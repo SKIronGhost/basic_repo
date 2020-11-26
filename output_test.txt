@@ -1,0 +1,84 @@
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git$ script output.txt
+Script started, file is output.txt
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git$ mkdir test
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git$ cd test/
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ touch index.html
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ touch styles.css
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ ls
+index.html  styles.css
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git init
+Initialized empty Git repository in /home/ironghost/Documents/Coding_Dojo/Tasks/6.git/test/.git/
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git add .
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git commit -m "Test files created"
+[master (root-commit) 0e351ed] Test files created
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 styles.css
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git add .
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git commit -m "index.html modified, was added DOCTYPE structure with jQuery link"
+[master 9db4c84] index.html modified, was added DOCTYPE structure with jQuery link
+ 1 file changed, 10 insertions(+)
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git statusOn branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   styles.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git add .ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git commit -m "styles.css modified, was added a formatting reset properties"
+[master f8323d6] styles.css modified, was added a formatting reset properties
+ 1 file changed, 6 insertions(+)
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git statusOn branch master
+nothing to commit, working tree clean
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git log
+commit f8323d68a79ec15f680ab5dfd813c52fe3321ec8 (HEAD -> master)
+Author: SKIronGhost <ed.diegofelix@gmail.com>
+Date:   Wed Nov 25 22:08:57 2020 -0300
+
+    styles.css modified, was added a formatting reset properties
+
+commit 9db4c84350cf44f0f617dfff00dbc92949b81a21
+Author: SKIronGhost <ed.diegofelix@gmail.com>
+Date:   Wed Nov 25 22:07:03 2020 -0300
+
+    index.html modified, was added DOCTYPE structure with jQuery link
+
+commit 0e351ed2c4e5f2d80df9c6716d0f61baf5f1c268
+Author: SKIronGhost <ed.diegofelix@gmail.com>
+Date:   Wed Nov 25 22:05:27 2020 -0300
+
+    Test files created
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git revert f8323d68a79ec15f680ab5dfd813c52fe3321ec8
+[master 337c17f] Revert "styles.css modified, was added a formatting reset properties"
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git statusOn branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   styles.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git add .ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   styles.css
+
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git commit -m "styles.css modified, was added a formatting reset properties and font family"
+[master 3e2085d] styles.css modified, was added a formatting reset properties and font family
+ 1 file changed, 5 insertions(+)
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ git status
+On branch master
+nothing to commit, working tree clean
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git/test$ exit
+exit
+Script done, file is output.txt
+ironghost@SKIronGhost-HP-15-PC:~/Documents/Coding_Dojo/Tasks/6.git$ 

@@ -1,0 +1,9 @@
+STEPS
+
+1. I reaname the folder test used in the las t activity
+2. I create this new file through the bash terminal with the "echo" command
+3. I described in this file the steps what I described
+4. I exceuted the command git remote origin 'URL' to attach my master to the new repo
+5. I used "add ." and "commit" git commands to confirm the changes and mosifications
+6. I pushed the files into my GitHub repo
+7. I attached the links for Bootstrap to my index.html file and pushed again
